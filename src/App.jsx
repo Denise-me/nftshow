@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './App.css'
+import { useWallet } from './hooks/useWallet'
 
 function App() {
+  const { account, isConnecting, connectWallet, disconnectWallet, formatAddress, isConnected } = useWallet()
+  
   const [nfts] = useState([
     {
       id: 1,
@@ -29,8 +32,30 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>NFT Show</h1>
-        <p>Discover and explore amazing digital artworks</p>
+        <div className="header-content">
+          <div className="header-title">
+            <h1>NFT Show</h1>
+            <p>Discover and explore amazing digital artworks</p>
+          </div>
+          <div className="wallet-section">
+            {isConnected ? (
+              <div className="wallet-connected">
+                <span className="wallet-address">{formatAddress(account)}</span>
+                <button onClick={disconnectWallet} className="disconnect-button">
+                  断开连接
+                </button>
+              </div>
+            ) : (
+              <button 
+                onClick={connectWallet} 
+                disabled={isConnecting}
+                className="connect-button"
+              >
+                {isConnecting ? '连接中...' : '连接钱包'}
+              </button>
+            )}
+          </div>
+        </div>
       </header>
       
       <main className="main">
