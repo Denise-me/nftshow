@@ -177,6 +177,96 @@
   transform: translateY(-1px);
 }
 
+.wallet-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.wallet-info h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.wallet-info p {
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.loading p {
+  font-size: 1.1rem;
+  color: #60a5fa;
+}
+
+.no-nfts {
+  padding: 2rem;
+  text-align: center;
+}
+
+.refresh-button {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.refresh-button:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  transform: translateY(-2px);
+}
+
+.nft-collection {
+  color: #f59e0b;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.nft-token {
+  color: #64748b;
+  font-size: 0.8rem;
+  font-family: 'Courier New', monospace;
+  margin: 0 0 1rem 0;
+}
+
+.opensea-button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.opensea-button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
 @media (max-width: 768px) {
   .header h1 {
     font-size: 2rem;
