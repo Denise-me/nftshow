@@ -90,25 +90,25 @@
 
 .nft-creator {
   color: #718096;
-  margin: 0 0 1rem 0;
-  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
 }
 
 .nft-price {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #6366f1;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .buy-button {
   width: 100%;
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1rem;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -179,17 +179,17 @@
 
 .wallet-info {
   text-align: center;
-  margin-bottom: 2rem;
-  padding: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border-radius: 12px;
   backdrop-filter: blur(10px);
   color: white;
 }
 
 .wallet-info h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2rem;
+  margin: 0 0 0.8rem 0;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -268,10 +268,10 @@
 }
 
 .custom-contract-section {
-  margin-top: 2rem;
-  padding: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
